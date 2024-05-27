@@ -1,3 +1,20 @@
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+This a TIC TAC TOE GAME developed by React JS
+
+public hosted link - https://tic-tac-toe-2503.netlify.app/
+
+For understanding check the below image - 
+
+![image](https://github.com/DGRYZER/TIC-TAC-TOE/assets/91932081/50e34078-90d1-4cbd-b09a-195b36acc07c)
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
