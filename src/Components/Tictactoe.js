@@ -8,7 +8,6 @@ const Tictactoe = () => {
 
   const click = (n) => {
     if (board[n] !== "" || winner) {
-      alert("Invalid move");
       return;
     }
 
@@ -18,10 +17,8 @@ const Tictactoe = () => {
 
     if (checkWin(newBoard)) {
       setWinner(move);
-      alert(`Player ${move} wins!`);
     } else if (checkDraw(newBoard)) {
-      alert("Match Draw");
-      setBoard(Array(9).fill(""));
+      setWinner("Draw");
     } else {
       setMove(move === "X" ? "O" : "X");
     }
@@ -77,7 +74,7 @@ const Tictactoe = () => {
           </tr>
         </tbody>
       </table>
-      {winner && <h2 className="winner-text">Winner: {winner}</h2>}
+      {winner && <h2 className="winner-text">{winner === "Draw" ? "Match Draw" : `Winner: ${winner}`}</h2>}
       <button onClick={resetGame}>Reset Game</button>
     </>
   );
